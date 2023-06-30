@@ -1,0 +1,12 @@
+{
+  "name": "state",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "yarn build && node build/index.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.2"
+  }
+}
