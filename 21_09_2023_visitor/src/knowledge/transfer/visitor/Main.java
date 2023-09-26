@@ -48,7 +48,7 @@ public class Main {
     }
 }
 /*
-In the code above, specifically explorer.visit(planet), there are 2 levels of dispatch calls:
+In the code above, specifically explorer.visit(shape), there are 2 levels of dispatch calls:
 
 Selection of which visitor to call (based on the receiver type)
 Selection of which visit(shape) to call (based on the argument type)
