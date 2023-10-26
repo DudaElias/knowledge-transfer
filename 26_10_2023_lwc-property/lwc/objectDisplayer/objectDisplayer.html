@@ -1,0 +1,14 @@
+<template>
+    <div style="background: white; padding:20px; border-radius: 10px;">
+        <div style="margin: 30px auto;">
+            <h1 style="font-size:24px; color:blue;">Object: {object}</h1>
+        </div>
+        <div if:true={data}>
+            <lightning-datatable
+            key-field="id"
+            data={data}
+            columns={columns}
+            ></lightning-datatable>
+        </div>
+    </div>    
+</template>
