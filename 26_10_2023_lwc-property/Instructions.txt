@@ -1,0 +1,19 @@
+You can define properties inside the XML file from the LWC bundle.
+Example (from the file objectDisplayer.js-meta.xml):
+
+<targetConfigs>  
+    <targetConfig targets="lightning__AppPage">
+        <property name="object" type="String" datasource="Lead,Opportunity,Account,Contact" default="Lead"/>
+    </targetConfig>
+</targetConfigs>
+
+
+You also need to declare variables in your js file with the same name of the properties from the XML. Don not forget to make them public by adding the annotation @api, otherwise it is not gonna work.
+
+Once everything is set, you can chose or input a value for the property when you drag and drop the component on the screen (see image <property-selection-img.png>).
+
+In your js file you can use the property value to perform any validations or filters. You can also use it for conditional rendering of parts of your html file.
+
+LWC targetConfig properties documentation: https://developer.salesforce.com/docs/platform/lwc/guide/reference-configuration-tags.html
+
+Feel free to deploy the objectDisplayer component and the apex classes from this folder to a playground or sandbox ORG to test and practice.
